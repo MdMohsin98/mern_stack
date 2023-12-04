@@ -1,0 +1,42 @@
+.box-container{
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: solid 2px black;
+    margin: 10px;
+}
+.box-container-1{
+    height: 400px;
+    width: 500px;
+    background-color: yellow;
+    border: solid 2px black;
+    margin: 10px;
+}
+.a, .b{
+    height: 100px;
+    width: 200px;
+    border: solid 2px black;
+    margin: 10px;
+}
+.a{
+    background-image: url('/images/download.png');
+    background-size: 70px 50px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.box-container:first-child{
+    background-color: red;  
+    position: relative;
+    position: absolute;
+    z-index: -2;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+}
+.box-container:nth-child(3){
+    background-color: blue;
+    position: sticky;
+    top: 10%;
+    left: 70%;
+}
